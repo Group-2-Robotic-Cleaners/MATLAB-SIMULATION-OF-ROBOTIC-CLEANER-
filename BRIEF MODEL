@@ -1,0 +1,12 @@
+ **Short Note on Simulink Model Structure (`automatic_vacuum.slx`)**
+
+* The model uses **Simscape** and **SimMechanics** components.
+* Simulation is configured in **normal mode** with data logging options set.
+* The `blockdiagram.xml` file defines the **core system structure**, listing blocks and their types.
+* Blocks are contained within `<System>` tags, each specifying:
+
+  * `BlockType` (e.g., Gain, Sum, Constant)
+  * `Name` (unique block identifiers)
+* Additional files like `configSet0.xml` and `graphicalInterface.json` define simulation settings and visual layout.
+
+
